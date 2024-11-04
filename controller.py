@@ -2,6 +2,7 @@
 import subprocess
 import statistics
 import sys
+import json
 
 
 class ProcessError(Exception):
@@ -41,7 +42,10 @@ class Controller:
         self.size = 100
         self.average = -1
         self.median = -1
-        python_command = "python"
+        f = open("runners.json", "r")
+        runners = json.load(f)
+        f.close()
+        python_command = runners["python"]
         try:
             self.process = subprocess.Popen(
                 [python_command, self.program],

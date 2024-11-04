@@ -10,7 +10,7 @@ class RandomNumberGenerator2:
         end: upper bound for random integers
     """
 
-    def __init__(self, start=0, end=100):
+    def __init__(self, start=-1000, end=1000):
         self.start = start
         self.end = end
         ##!TODO wyjatek start >= end
@@ -25,7 +25,7 @@ class RandomNumberGenerator2:
 
 
 
-random_number_generator = RandomNumberGenerator2(-1000, 1000)
+random_number_generator = RandomNumberGenerator2()
 while True:
     command = sys.stdin.readline().strip()
     if command == "Shutdown":

@@ -25,7 +25,7 @@ class RandomNumberGenerator:
 
 
 
-random_number_generator = RandomNumberGenerator(0, 100)
+random_number_generator = RandomNumberGenerator()
 while True:
     command = sys.stdin.readline().strip()
     if command == "Shutdown":
