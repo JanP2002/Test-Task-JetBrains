@@ -8,6 +8,7 @@ you **have to set it in runners.json**.
 
 (e.g. change {python: "python"} to {python: "python3"} inside runners.json).
 
+Programs were tested on Python 3.12.4.
 # Changing configuration
 
 By default, pseudo_random_number_generator.py 
