@@ -1,5 +1,5 @@
 # Instruction
-*Running program*
+# Running program
 
 **python controller.py**
 
@@ -8,20 +8,22 @@ you **have to set it in runners.json**.
 
 (e.g. change {python: "python"} to {python: "python3"} inside runners.json).
 
-*Default configuration*
+# Changing configuration
 
 By default, pseudo_random_number_generator.py 
 is used as pseudo random number generator.
 
 If you would like to change it (e.g. to generator2.py) run:
 
-**python controller.py generator2.py**   or 
+**python controller.py generator2.py**   
+
+or 
 
 **python controller.py <my_generator>**,
 
 where <my_generator> is name of your generator.
 
-*Range of random numbers*
+# Range of random numbers
 
 
 Default generator - pseudo_random_number_generator.py generates integer from [0, 100].
